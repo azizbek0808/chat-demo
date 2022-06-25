@@ -5,11 +5,8 @@ import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 @Data
 @Entity
@@ -21,8 +18,5 @@ public class User extends AbsLongEntity {
 
     @Column(name = "created_at")
     private Date createdAt;
-
-    /*@ManyToMany(mappedBy = "users")
-    private Set<Chat> chats = new HashSet<>();*/
 
 }
